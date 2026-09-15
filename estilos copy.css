@@ -1,0 +1,372 @@
+/* GENERAL */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+}
+
+h1, h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+
+section {
+  padding: 40px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* HEADER */
+.header {
+  background: #0a3d62;
+  color: white;
+  padding: 15px 5%;
+  display: flex;
+  position: sticky;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+ .bar {
+            width: 25px;
+            height: 3px;
+            background-color: white;
+            border-radius: 2px;
+        }
+/* NAV */
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav a {
+    color: #c5c6c7;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    padding-bottom: 5px;
+}
+
+.nav a:hover, .nav li.active a {
+    color: #66fcf1;
+    border-bottom: 2px solid #66fcf1;
+}
+.menu-toggle {
+  display: none;
+}
+.nav-mobile {
+  display: none;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+}
+ .video-container {
+  display: flex;
+  justify-content: center;   /* Centra horizontalmente */
+  align-items: center;       /* Centra verticalmente (si hay altura disponible) */
+  margin-top: 40px;          /* Separación opcional */
+  }
+
+    video {
+        max-width: 80%;            /* Ajusta el tamaño del video */
+        border-radius: 10px;       /* Opcional: esquinas redondeadas */
+    }
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0a3d62;
+  color: white;
+  margin-top: 40px;
+}
+/* FOOTER CORPORATIVO */
+.footer {
+  background: #062c45;
+  color: #fff;
+  padding: 40px 20px 10px;
+  margin-top: 40px;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 220px;
+}
+
+.footer-col h3 {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+  color: #82ccdd;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 8px;
+}
+
+.footer-col ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-col ul li a:hover {
+  color: #82ccdd;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #0a3d62;
+  font-size: 0.9rem;
+}
+/* FORMULARIO DE CONTACTO */
+.contact-section {
+  max-width: 800px;
+  margin: auto;
+  padding: 40px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.contact-form label {
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form textarea {
+  height: 150px;
+  resize: none;
+}
+
+.contact-form button {
+  background: #0a3d62;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background: #145a7a;
+}
+/* MENÚ RESPONSIVE */
+@media (max-width: 768px) {
+ 
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 22px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  height: 4px;
+  background: #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.nav-mobile {
+  display: none;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 70%;
+  height: 100vh;
+  background: #0b0c10;
+  padding-top: 80px;
+  z-index: 1000;
+}
+
+.nav-mobile ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding-left: 30px;
+}
+
+.nav-mobile a {
+  color: #c5c6c7;
+  font-size: 1.4rem;
+  text-decoration: none;
+}
+
+.nav-mobile a:hover {
+  color: #66fcf1;
+}
+.nav ul {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+
+  .menu-toggle:checked ~ .nav-mobile {
+    display: block;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+
+/* Cierre automático del menú al pulsar un enlace */
+.nav-mobile a {
+  display: block;
+}
+
+.nav-mobile a:active {
+  opacity: 0.7;
+}
+
+/* Truco CSS para cerrar el menú sin JS */
+.nav-mobile a {
+  cursor: pointer;
+}
+
+.nav-mobile a:focus {
+  outline: none;
+}
+
+/* Cuando se hace clic en un enlace, el checkbox se desmarca */
+.nav-mobile a:active ~ #menu-toggle {
+  display: none;
+}
+/* Contenedor Principal de la Tarjeta */
+.carbon-player-container {
+  background-color: #ffffff;
+  border-radius: 16px;
+  border: 1px solid #e2e9e5;
+  box-shadow: 0 10px 25px rgba(16, 42, 29, 0.05); /* Sombra suave con tono verdoso */
+  padding: 20px;
+  max-width: 450px;
+  margin: 20px auto;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+/* Encabezado Profesional (Título y Subtítulo) */
+.carbon-player-info {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #f0f4f2;
+  padding-bottom: 14px;
+}
+
+.carbon-icon-leaf {
+  font-size: 22px;
+  background-color: #e8f5e9;
+  padding: 8px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carbon-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.carbon-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #111827;
+  margin: 0;
+}
+
+.carbon-subtitle {
+  font-size: 12px;
+  color: #6b7280;
+  margin: 4px 0 0 0;
+}
+
+/* Estilización del Reproductor Nativo del Navegador */
+.carbon-audio-native {
+  width: 100%;
+  height: 40px;
+  display: block;
+  outline: none;
+  border-radius: 8px;
+}
+
+/* 
+  Filtro avanzado para cambiar el color gris/azul nativo 
+  por un tono verde ecológico acorde a la temática
+*/
+@media (prefers-color-scheme: light) {
+  .carbon-audio-native {
+    filter: sepia(0.2) hue-rotate(60deg) saturate(1.2) contrast(0.9);
+  }
+}
+}
