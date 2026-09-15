@@ -7,12 +7,12 @@
 El repositorio está compuesto por las siguientes páginas, estilos y recursos multimedia:
 
 ### Páginas Principales (HTML)
-*   `index.html`: Página principal y de bienvenida del sitio web sobre sostenibilidad.
-*   `articulos.html`: Sección que recopila artículos informativos relacionados con el medio ambiente.
-*   `economia-circular.html`: Espacio dedicado a explicar el modelo de la economía circular (reducir, reutilizar, reciclar).
-*   `economia-azul.html`: Información sobre la economía azul y el aprovechamiento sostenible de los recursos marinos.
-*   `huella-carbono.html`: Contenido enfocado en la medición, impacto y reducción de la huella de carbono.
-*   `contacto.html`: Formulario o datos de contacto para los usuarios del sitio web.
+*   [Índice](https://sostenibilidad.garome.site/index.html) - Página principal y de bienvenida del sitio web sobre sostenibilidad.
+*   [articulos](https://sostenibilidad.garome.site/articulos.html) Sección que recopila artículos informativos relacionados con el medio ambiente.
+*   [economia-circular](https://sostenibilidad.garome.site/economia-circular.html) - Espacio dedicado a explicar el modelo de la economía circular (reducir, reutilizar, reciclar).
+*   [economia-azul](https://sostenibilidad.garome.site/economia-azul.html) - Información sobre la economía azul y el aprovechamiento sostenible de los recursos marinos.
+*   [huella-carbono](https://sostenibilidad.garome.site/huella-carbona.html) - Contenido enfocado en la medición, impacto y reducción de la huella de carbono.
+*   [contacto](https://sostenibilidad.garome.site/contacto.html) - Formulario o datos de contacto para los usuarios del sitio web.
 
 ### Estilos (CSS)
 *   `estilos.css`: Archivo de hojas de estilo principal que define el diseño visual y la responsividad de la página.
